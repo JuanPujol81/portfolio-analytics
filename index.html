@@ -1,43 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raul Pujol — Analytics & BI Portfolio</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:860px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1{margin-bottom:0.2rem}
-    .muted{color:#666}
-    a{color:#0b5fff;text-decoration:none} a:hover{text-decoration:underline}
-    ul{padding-left:1rem}
-    .project{margin:1rem 0}
-  </style>
-</head>
-<body>
-  <h1>Raul Pujol — Analytics &amp; Business Intelligence Portfolio</h1>
-  <p class="muted">Python · SQL · Power BI · Tableau</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Juan Raul Pujol portfolio: analytics, BI, Python, SQL, React, Node.js, PostgreSQL, and AI-assisted tools."
+    />
+    <title>Juan Raul Pujol | Tech Portfolio</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --text: #172033;
+        --muted: #5d667a;
+        --line: #d9dee8;
+        --panel: #f6f8fb;
+        --accent: #1457d9;
+      }
 
-  <h2>Featured Projects</h2>
+      * {
+        box-sizing: border-box;
+      }
 
-  <div class="project">
-    <strong>Retail Sales Analytics</strong> — Cohorts, seasonality, and product mix.<br/>
-    <a href="https://retail-sales-analytics-demo.streamlit.app/">Try demo</a> · <a href="#">Power BI</a> · <a href="#">Tableau</a> ·
-    <a href="https://github.com/JuanPujol81/retail-sales-analytics-demo">GitHub repo</a>
-  </div>
+      body {
+        margin: 0;
+        color: var(--text);
+        background: #ffffff;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.6;
+      }
 
-  <div class="project">
-    <strong>Employee Analytics Dashboard</strong> — Headcount, attrition, tenure, and performance KPIs.<br/>
-    <a href="https://employee-analytics-demo-6kzax7p9gxp7h5shqusfu6.streamlit.app/" target="_blank">Try demo</a>&nbsp;·&nbsp;
-    <a href="#" target="_blank">Power BI</a>&nbsp;·&nbsp;
-    <a href="#" target="_blank">Tableau</a>&nbsp;·&nbsp;
-    <a href="https://github.com/JuanPujol81/Employee-Analysis-in-a-Company" target="_blank">GitHub repo</a>
-  </div>
+      main {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0;
+      }
 
+      header {
+        padding: 32px 0 28px;
+        border-bottom: 1px solid var(--line);
+      }
 
-  <h2>Contact</h2>
-  <p>
-    LinkedIn: <a href="https://www.linkedin.com/in/your-profile">/in/your-profile</a><br/>
-    GitHub: <a href="https://github.com/JuanPujol81">JuanPujol81</a>
-  </p>
-</body>
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        max-width: 820px;
+        margin-bottom: 12px;
+        font-size: clamp(2.1rem, 5vw, 4rem);
+        line-height: 1.05;
+      }
+
+      h2 {
+        margin-bottom: 16px;
+        font-size: 1.55rem;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+      }
+
+      a {
+        color: var(--accent);
+        font-weight: 650;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 34px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .intro {
+        max-width: 780px;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .role {
+        margin-bottom: 10px;
+        color: var(--accent);
+        font-weight: 750;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 22px;
+      }
+
+      .links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 8px 13px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: #fff;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .card {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .card p {
+        color: var(--muted);
+      }
+
+      .stack {
+        margin-bottom: 14px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .project-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .skills li {
+        padding: 7px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fff;
+        color: var(--muted);
+      }
+
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 14px;
+      }
+
+      @media (max-width: 820px) {
+        main {
+          padding: 28px 0;
+        }
+
+        .grid,
+        .contact {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="role">Data Analytics · BI · Full-stack AI tools</p>
+        <h1>Juan Raul Pujol builds practical data products and web tools.</h1>
+        <p class="intro">
+          I create analytics dashboards, Python/SQL workflows, and full-stack
+          applications that turn messy data or repetitive operations into clear,
+          usable systems. My portfolio highlights BI, automation, backend APIs,
+          React frontends, PostgreSQL, and AI-assisted review flows.
+        </p>
+        <nav class="links" aria-label="Primary links">
+          <a href="mailto:raul810324@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/juan-raul-pujol-b9418032/"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/JuanPujol81">GitHub</a>
+        </nav>
+      </header>
+
+      <section>
+        <h2>Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Gmail AI Cleaner</h3>
+            <p class="stack">
+              Node.js · Express · React · PostgreSQL · Prisma · Gmail OAuth ·
+              Groq AI
+            </p>
+            <p>
+              Local-first email operations tool that classifies Gmail messages,
+              stores processed metadata, uses AI to review ambiguous messages,
+              and applies safe Gmail labels without destructive actions.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/JuanPujol81/gmail-cleaner-agent"
+                >GitHub repo</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Retail Sales Analytics</h3>
+            <p class="stack">Python · pandas · Streamlit · BI analysis</p>
+            <p>
+              Sales analytics demo focused on business KPIs, product mix,
+              seasonality, and customer behavior for recruiter-friendly review.
+            </p>
+            <div class="project-links">
+              <a href="https://retail-sales-analytics-demo.streamlit.app/"
+                >Live demo</a
+              >
+              <a href="https://github.com/JuanPujol81/retail-sales-analytics-demo"
+                >GitHub repo</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Employee Analytics Dashboard</h3>
+            <p class="stack">Python · SQL · Streamlit · HR analytics</p>
+            <p>
+              Employee analytics project covering headcount, attrition, tenure,
+              performance KPIs, and business-ready dashboard storytelling.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://employee-analytics-demo-6kzax7p9gxp7h5shqusfu6.streamlit.app/"
+                >Live demo</a
+              >
+              <a href="https://github.com/JuanPujol81/Employee-Analysis-in-a-Company"
+                >GitHub repo</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>What I bring</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Analytics thinking</h3>
+            <p>
+              I define useful KPIs, clean data, and present insights in a way
+              that supports decisions instead of only showing charts.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Production mindset</h3>
+            <p>
+              I document setup, protect secrets, write tests for core logic, and
+              keep projects reviewable for other developers.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Practical automation</h3>
+            <p>
+              I use APIs, databases, and AI carefully to reduce manual work
+              while keeping human review where risk is higher.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>PostgreSQL</li>
+          <li>Power BI</li>
+          <li>Tableau</li>
+          <li>pandas</li>
+          <li>Streamlit</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Prisma</li>
+          <li>Git/GitHub</li>
+          <li>API integration</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div class="contact">
+          <div class="card">
+            <h3>Email</h3>
+            <a href="mailto:raul810324@gmail.com">raul810324@gmail.com</a>
+          </div>
+          <div class="card">
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/juan-raul-pujol-b9418032/"
+              >juan-raul-pujol</a
+            >
+          </div>
+          <div class="card">
+            <h3>GitHub</h3>
+            <a href="https://github.com/JuanPujol81">JuanPujol81</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

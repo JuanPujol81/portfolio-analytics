@@ -1,33 +1,49 @@
-# Raul Pujol — Analytics & Business Intelligence Portfolio
+# Juan Raul Pujol | Tech Portfolio
 
-I build end-to-end **Analytics** and **BI** solutions using **Python, SQL, Power BI, and Tableau**.  
-My focus: clear KPIs, business insight, and recruiter-friendly demos that run in one click.
+I build practical data products and web tools across **Data Analytics**, **BI**, and **full-stack AI-assisted applications**.
+
+My work focuses on clear KPIs, clean workflows, useful dashboards, backend APIs, React frontends, PostgreSQL persistence, and careful automation that keeps human review where risk is higher.
 
 ## Featured Projects
-- **Retail Sales Analytics** — Cohorts, seasonality, and product mix.  
-  [Try demo](#) · [Power BI](#) · [Tableau](#) · [GitHub repo](#)
 
-- **Marketing Executive Dashboard** — CAC, ROAS, LTV, and funnel analysis.  
-  [Try demo](#) · [Power BI](#) · [Tableau](#) · [GitHub repo](#)
+### Gmail AI Cleaner
 
-_ **Employee Analytics (Python·SQL·Power BI)** — Cohorts, churn drivers, compensation bands, and KPIs.
-  - [Employee Analysis in a Company](https://github.com/JuanPujol81/Employee-Analysis-in-a-Company.git) 
+**Stack:** Node.js, Express, React, PostgreSQL, Prisma, Gmail OAuth, Groq AI
 
-> Open any project and launch the demo in one click. Each repo includes a README with data, method, KPIs, and how to run locally.
+Local-first email operations tool that connects to Gmail through OAuth, classifies inbox messages with deterministic safety-focused rules, stores processed email metadata in PostgreSQL, uses Groq AI to review ambiguous emails, and provides a React dashboard to inspect results and apply safe Gmail labels.
+
+- [GitHub repo](https://github.com/JuanPujol81/gmail-cleaner-agent)
+
+### Retail Sales Analytics
+
+**Stack:** Python, pandas, Streamlit, BI analysis
+
+Sales analytics demo focused on business KPIs, product mix, seasonality, and customer behavior for recruiter-friendly review.
+
+- [Live demo](https://retail-sales-analytics-demo.streamlit.app/)
+- [GitHub repo](https://github.com/JuanPujol81/retail-sales-analytics-demo)
+
+### Employee Analytics Dashboard
+
+**Stack:** Python, SQL, Streamlit, HR analytics
+
+Employee analytics project covering headcount, attrition, tenure, performance KPIs, and business-ready dashboard storytelling.
+
+- [Live demo](https://employee-analytics-demo-6kzax7p9gxp7h5shqusfu6.streamlit.app/)
+- [GitHub repo](https://github.com/JuanPujol81/Employee-Analysis-in-a-Company)
+
+## What I Bring
+
+- **Analytics thinking:** I define useful KPIs, clean data, and present insights in a way that supports decisions instead of only showing charts.
+- **Production mindset:** I document setup, protect secrets, write tests for core logic, and keep projects reviewable for other developers.
+- **Practical automation:** I use APIs, databases, and AI carefully to reduce manual work while keeping human review where risk is higher.
 
 ## Skills
-**Python (pandas, numpy, matplotlib)** · **SQL (PostgreSQL)** · **Power BI (Power Query, DAX, RLS)** · **Tableau (LOD, parameters, actions)** · **Excel** · Git/GitHub · Streamlit
 
-## About
-I turn data into decisions: clean pipelines, business-ready dashboards, and concise executive summaries.
+Python · SQL · PostgreSQL · Power BI · Tableau · pandas · Streamlit · Node.js · Express · React · TypeScript · Prisma · Git/GitHub · API integration
 
 ## Contact
-- Email: raul810324@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/juan-raul-pujol-b9418032/  
-- GitHub: https://github.com/JuanPujol8
 
-
-## 🔍 Featured Projects
- 
-  Exploratory analysis of employee data using Python, Pandas, and Seaborn.
-
+- Email: [raul810324@gmail.com](mailto:raul810324@gmail.com)
+- LinkedIn: [juan-raul-pujol](https://www.linkedin.com/in/juan-raul-pujol-b9418032/)
+- GitHub: [JuanPujol81](https://github.com/JuanPujol81)
